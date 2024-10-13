@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+}
+
+.logo:hover{
+    color: purple;
+    text-shadow: 0 0 20px purple,
+                 0 0 20px purple;
+    transform: scale(1.2);
+
+}
+
+span{
+    color: purple;
+
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color-dark);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color-dark);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s ease;
+}
+
+ul li a:hover {
+    color: rgb(200, 58, 200);
+    text-shadow: 0 0 20px rgb(200, 58, 200),
+                 0 0 20px rgb(200, 58, 200);
+    transform: scale(1.5rem);
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 17px;
+    color: purple; 
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.3); 
+    background-color: rgba(203, 15, 137, 0.1); 
+    color: #c718a1; 
+}
+
+
+
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  background-color: var(--primary-color);
+  color: white;
+
+
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.image{
+    display: grid;
+    place-items: center;
+
+}
+
+.image img{
+    width: min(25rem, 90%);
+    border-radius: 100%;
+
+}
+
+
+
+.intro-section {
+  margin-top: 6px;
+  font-size: 1.2rem;
+
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-section h1 {
+    color: #800080;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  font-family: 'Georgia', serif; /* Custom font for description */
+  color: #6b7280;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.family-section {
+  margin-top: 50px; /* Keeps spacing from the top consistent */
+  display: flex;
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.family-card {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+.family-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensures images fit well inside the circle */
+  margin-bottom: 20px; /* Adds space between the image and the name */
+}
+
+.family-card h3 {
+  font-size: 1.5rem;
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.family-card p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+.family-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+}
+.family-card img:hover {
+  transform: scale(1.15);  /* Slightly larger zoom for a smoother effect */
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.education-section {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+
+.intro-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-section h1 {
+  text-align: center;
+  margin: 100px 0;
+  color: #800080;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.edu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edu-image img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.edu-content {
+  padding: 20px 30px;
+  max-width: 600px;
+}
+
+.edu-content h2 {
+  font-size: 2.2em;
+  color: purple;
+  margin-bottom: 15px;
+}
+
+.edu-content p {
+  font-size: 1.1em;
+  color: #6b7280;
+}
+
+.edu-content p strong {
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.edu-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+}
+
+
+@media (max-width: 768px) {
+  .edu-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .edu-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+  }
+
+  .edu-content {
+      padding: 20px;
+  }
+}
+
+
+.hobby-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hobby-section h2 {
+  text-align: center;
+  margin: 100px 0;
+  color: #800080;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #f5f5f5;
+    padding: 40px; 
+    border-radius: 10px;
+}
+
+.hobby-image {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 40px; 
+}
+
+.hobby-details {
+    text-align: left;
+}
+
+.hobby-details h3 {
+    font-size: 32px; 
+    color: purple;
+}
+
+.hobby-details p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif; /* Custom font for description */
+    color: #6b7280;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hobby-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+}
+.hobby-image img:hover {
+  transform: scale(1.15);  /* Slightly larger zoom for a smoother effect */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-container div {
+    margin-bottom: 20px;
+}
+
+.footer-container h3 {
+    margin-bottom: 1px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-container p, .footer-container a, .footer-container ul {
+    margin: 5px 0;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+    text-shadow: 0 0 25px blue,
+    0 0 25px blue;
+transform: scale(1.3);
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: blue;
+    text-shadow: 0 0 25px blue,
+                 0 0 25px blue;
+    transform: scale(1.3);
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}

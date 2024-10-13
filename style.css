@@ -253,7 +253,7 @@ nav ul li a:hover {
 
 .intro-section p {
   font-size: 1.2rem;
-  font-family: 'Georgia', serif; /* Custom font for description */
+  font-family: 'Georgia', serif; 
   color: #6b7280;
   margin-bottom: 40px;
   max-width: 600px;
@@ -261,7 +261,7 @@ nav ul li a:hover {
   margin-right: auto;
 }
 .family-section {
-  margin-top: 50px; /* Keeps spacing from the top consistent */
+  margin-top: 50px; 
   display: flex;
   padding: 40px;
   text-align: center;
@@ -284,8 +284,8 @@ nav ul li a:hover {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  object-fit: cover; /* Ensures images fit well inside the circle */
-  margin-bottom: 20px; /* Adds space between the image and the name */
+  object-fit: cover; 
+  margin-bottom: 20px; 
 }
 
 .family-card h3 {
@@ -300,10 +300,10 @@ nav ul li a:hover {
 }
 .family-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
 }
 .family-card img:hover {
-  transform: scale(1.15);  /* Slightly larger zoom for a smoother effect */
+  transform: scale(1.15);  
 }
 
 
@@ -385,7 +385,7 @@ body {
 
 .edu-content:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -452,7 +452,7 @@ body {
     font-size: 20px;
     margin: 10px 0;
     font-size: 1.2rem;
-    font-family: 'Georgia', serif; /* Custom font for description */
+    font-family: 'Georgia', serif; 
     color: #6b7280;
     margin-bottom: 40px;
     max-width: 600px;
@@ -462,10 +462,10 @@ body {
 
 .hobby-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow when hovering */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
 }
 .hobby-image img:hover {
-  transform: scale(1.15);  /* Slightly larger zoom for a smoother effect */
+  transform: scale(1.15); 
 }
 
 
